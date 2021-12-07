@@ -1,0 +1,11 @@
+.header{
+    display:flex;
+    margin-top:50px
+}
+
+
+.header li{
+    list-style: none;
+    margin-right:25px ;
+    font-size: 20px;
+}
