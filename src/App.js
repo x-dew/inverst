@@ -16,10 +16,12 @@ function App() {
             })
         axios.get('https://openexchangerates.org/api/latest.json?app_id=870e2799faff44f68cc10d618ec6e5e3')
             .then(res => {
-                setLatest(res.data)
+                setLatest(res.data.rates)
             })
 
     }, [])
+
+    console.log(latest)
 
     return (
         <div className="App">

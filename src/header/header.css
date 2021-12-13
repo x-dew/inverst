@@ -1,16 +1,16 @@
-.header{
-    display:flex;
-    margin-top:50px
+.header {
+    display: flex;
+    margin-top: 50px
 }
 
-.logo img{
+.logo img {
     width: 140px;
 
 }
 
-.header li{
+.header li {
     list-style: none;
-    margin-right:25px ;
+    margin-right: 25px;
     font-size: 20px;
 }
 
@@ -20,7 +20,7 @@
     margin: 0 auto;
 }
 
-.telFlex{
+.telFlex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@
     margin-top: 85px;
 }
 
-.telPartOne:after{
+.telPartOne:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -45,7 +45,7 @@
     background: rgba(59, 59, 59, 1);
 }
 
-.telPartOne:before{
+.telPartOne:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -54,7 +54,7 @@
     background: rgba(59, 59, 59, 1);
 }
 
-.telPartTwo{
+.telPartTwo {
     position: relative;
     background: white;
     width: 100%;
@@ -63,7 +63,7 @@
     border-radius: 40px;
 }
 
-.telPartTwo:after{
+.telPartTwo:after {
     content: '';
     position: absolute;
     width: 5px;
@@ -73,7 +73,7 @@
     background: rgba(59, 59, 59, 1);
 }
 
-.telPartTwo:before{
+.telPartTwo:before {
     content: '';
     position: absolute;
     width: 5px;
@@ -83,7 +83,7 @@
     background: rgba(59, 59, 59, 1);
 }
 
-.telParThree{
+.telParThree {
     background: rgba(59, 59, 59, 1);
     width: 100%;
     max-width: 294px;
@@ -92,7 +92,7 @@
     z-index: 1;
 }
 
-.telParFour{
+.telParFour {
     background: black;
     width: 100%;
     max-width: 288px;
@@ -100,16 +100,17 @@
     border-radius: 39px;
 }
 
-.telParFive{
+.telParFive {
     background: white;
     width: 100%;
-    max-width: 269px;
+    max-width: 243px;
     height: 622px;
     border-radius: 34px;
     position: relative;
+    padding: 0 15px;
 }
 
-.telParFive:before{
+.telParFive:before {
     content: '';
     position: absolute;
     bottom: 8px;
@@ -122,51 +123,114 @@
 
 }
 
-.telParFive-line{
+.telParFive-line {
     content: '';
     position: absolute;
     top: 0;
     left: calc(50% - 65px);
-    width:100%;
+    width: 100%;
     max-width: 130px;
     height: 23px;
     background: black;
     border-radius: 0 0 10px 10px;
 }
 
-.telParFive-line__microphone{
+.telParFive-line__microphone {
     content: '';
     position: absolute;
     top: calc(50% - 4.5px);;
     left: calc(50% - 15px);
-    width:100%;
+    width: 100%;
     max-width: 30px;
     height: 5px;
     background: rgba(59, 59, 59, 0.82);
-    border-radius:10px;
+    border-radius: 10px;
 }
 
-.telParFive-line__microphone:after{
+.telParFive-line__microphone:after {
     content: '';
     position: absolute;
     top: calc(50% - 5px);;
     left: 127%;
-    width:100%;
+    width: 100%;
     max-width: 10px;
     height: 10px;
     background: rgba(59, 59, 59, 0.82);
-    border-radius:10px;
+    border-radius: 10px;
 }
 
-.telParFive-line__microphone:before{
+.telParFive-line__microphone:before {
     content: '';
     position: absolute;
     top: calc(50% - 3.5px);
     left: 132%;
-    width:100%;
+    width: 100%;
     max-width: 7px;
     height: 7px;
     background: #383961;
-    border-radius:10px;
+    border-radius: 10px;
     z-index: 11;
+}
+
+
+.telParFive h1 {
+    font-size: 25px;
+    margin-top: 65px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+
+
+.countryСourses {
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+
+}
+
+.country img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.country h5 {
+    margin: 0;
+    font-size: 10px;
+}
+
+.country p {
+    margin-top: 3px;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.courseComparison {
+    width: 100%;
+    max-width: 88px;
+    background: #eeeeee;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.courseComparison{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.courseComparison p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.textMargin{
+    margin-left: 5px!important;
 }
