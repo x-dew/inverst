@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: start;
     margin: 0 auto;
+    width: 100%;
+    max-width: 1900px;
 }
 
 .scoreboard {
@@ -16,14 +18,33 @@
 }
 
 .scoreboard-date {
-    background: white;
+    position: relative;
     width: 100%;
+    background: white;
     max-width: 1350px;
     height: 1000px;
     border-radius: 500px 0px 0px 500px;
+    display: flex;
+    align-items: center;
 }
 
+.scoreboard-date:after{
+    content: url("./img/units-converter-time-converter.684976947c3d.png");
+    position: absolute;
+    width: 1000px;
+}
 
+.scoreboard-text{
+    width: 100%;
+    max-width: 958px;
+    height: 602px;
+    background: white;
+    z-index: 1;
+    position: absolute;
+    top: 167px;
+    left: 150px;
+    border-radius: 5px;
+}
 
 @keyframes App-logo-spin {
     from {

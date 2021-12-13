@@ -27,13 +27,35 @@
 }
 
 .telPartOne {
+    position: relative;
     background: black;
     width: 100%;
     max-width: 300px;
     height: 653px;
     border-radius: 40px;
+    margin-top: 85px;
 }
+
+.telPartOne:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 57px;
+    height: 5px;
+    background: rgba(59, 59, 59, 1);
+}
+
+.telPartOne:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 57px;
+    height: 5px;
+    background: rgba(59, 59, 59, 1);
+}
+
 .telPartTwo{
+    position: relative;
     background: white;
     width: 100%;
     max-width: 297px;
@@ -41,12 +63,33 @@
     border-radius: 40px;
 }
 
+.telPartTwo:after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    top: -1px;
+    right: 52px;
+    height: 100.3%;
+    background: rgba(59, 59, 59, 1);
+}
+
+.telPartTwo:before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    top: -1px;
+    left: 52px;
+    height: 100.3%;
+    background: rgba(59, 59, 59, 1);
+}
+
 .telParThree{
-    background: lightgrey;
+    background: rgba(59, 59, 59, 1);
     width: 100%;
     max-width: 294px;
-    height: 649px;
-    border-radius: 40px;
+    height: 648px;
+    border-radius: 38px;
+    z-index: 1;
 }
 
 .telParFour{
@@ -66,7 +109,20 @@
     position: relative;
 }
 
-.telParFive:after{
+.telParFive:before{
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: calc(50% - 45px);
+    width: 100%;
+    max-width: 90px;
+    height: 5px;
+    background: black;
+    border-radius: 15px;
+
+}
+
+.telParFive-line{
     content: '';
     position: absolute;
     top: 0;
@@ -76,4 +132,41 @@
     height: 23px;
     background: black;
     border-radius: 0 0 10px 10px;
+}
+
+.telParFive-line__microphone{
+    content: '';
+    position: absolute;
+    top: calc(50% - 4.5px);;
+    left: calc(50% - 15px);
+    width:100%;
+    max-width: 30px;
+    height: 5px;
+    background: rgba(59, 59, 59, 0.82);
+    border-radius:10px;
+}
+
+.telParFive-line__microphone:after{
+    content: '';
+    position: absolute;
+    top: calc(50% - 5px);;
+    left: 127%;
+    width:100%;
+    max-width: 10px;
+    height: 10px;
+    background: rgba(59, 59, 59, 0.82);
+    border-radius:10px;
+}
+
+.telParFive-line__microphone:before{
+    content: '';
+    position: absolute;
+    top: calc(50% - 3.5px);
+    left: 132%;
+    width:100%;
+    max-width: 7px;
+    height: 7px;
+    background: #383961;
+    border-radius:10px;
+    z-index: 11;
 }

@@ -11,7 +11,9 @@ const Header = () => {
                     <div className='telParThree telFlex'>
                         <div className='telParFour telFlex'>
                             <div className='telParFive telFlex'>
-
+                                <div className='telParFive-line'>
+                                    <div className='telParFive-line__microphone'></div>
+                                </div>
                             </div>
                         </div>
                     </div>
