@@ -1,126 +1,29 @@
 .App {
-
-}
-
-h1 {
-    font-size: 56px;
-    text-align: center;
-}
-
-.cardText {
-    text-align: center;
-    width: 245px;
-    background: white;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    transition: 1s;
-}
-
-.cardTextAfter::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 20px solid transparent;
-    border-bottom-color: #acacac;
-    border-top: 0;
-    border-right: 0;
-    margin-top: -20px;
-}
-
-.cardText p {
-    margin: 0;
-}
-
-.card {
-    background: #3b3b3b;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.cardData {
-    position: relative;
-    margin: 44px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.cardImg {
-    width: 225px;
-    display: flex;
-    height: 300px;
-}
-
-.nickName{
-    display: flex;
-    align-items: center;
-}
-.nickName img {
-    margin-right: 10px;
-}
-
-.cardDataPosition {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 25px;
-    width: 50px;
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.positionLine {
-    height: 1px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25%;
-    background-color: rgb(255, 255, 255);
-    margin: 2px 0;
-    width: 22px;
-}
-
-.cardDataPosition:hover {
-    transform: scale(1.05)
-}
-
-.cardTextTop{
-    margin-top: -200px;
-    height: 320px;
-    transition: 1s;
-    opacity: .9;
-    overflow: hidden;
-    position: relative;
-}
-
-.cardTextTopDisabled{
-    display: none;
-}
-.cardTextTitle{
-    display: block;
-    transition: 1s;
-    width: 98%;
-    text-align: center;
-}
-.cardTitle{
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e9e9e9;
-    padding: 10px 5px;
+    align-items: start;
+    margin: 0 auto;
 }
-.cardTitle p{
-    font-size: 14px;
 
+.scoreboard {
+    background: #058ffc;
+    width: 100%;
+    max-width: 1400px;
+    height: 1000px;
+    border-radius: 500px 0px 0px 500px;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.scoreboard-date {
+    background: white;
+    width: 100%;
+    max-width: 1350px;
+    height: 1000px;
+    border-radius: 500px 0px 0px 500px;
+}
+
+
 
 @keyframes App-logo-spin {
     from {
