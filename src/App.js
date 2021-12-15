@@ -1,7 +1,7 @@
 import './App.css';
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import Header from "./header/header";
+import Telephone from "./header/telephone";
 import Img from './img/units-converter-time-converter.684976947c3d.png'
 
 
@@ -25,7 +25,7 @@ function App() {
 
     return (
         <div className="App">
-            <Header/>
+            <Telephone/>
             <div className='scoreboard'>
                 <div className='scoreboard-date'>
                     <div className='scoreboard-text'></div>
