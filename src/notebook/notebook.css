@@ -1,23 +1,22 @@
 
-
-.notebook{
+.notebook {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
 
-.sum{
+.sum {
     width: 100%;
     max-width: 410px;
 }
 
-.convertor{
+.convertor {
     width: 100%;
     max-width: 410px
 }
 
-.notebook h3{
+.notebook h3 {
     font-weight: 400;
     font-size: 14px;
     color: white;
@@ -25,7 +24,7 @@
     transition: color .15s ease-in-out;
 }
 
-.notebookInput{
+.notebookInput {
     width: 100%;
     max-width: 207px;
     background-color: #fff;
@@ -41,7 +40,7 @@
     max-height: 62px;
 }
 
-.notebookBtn{
+.notebookBtn {
     position: relative;
     width: 100%;
     max-width: 157px;
@@ -49,7 +48,7 @@
     background-image: none;
     border: 1px solid #d3d5d8;
     transition: border-color .15s ease-in-out;
-    padding: 16px 20px ;
+    padding: 16px 20px;
     border-radius: 10px;
     background-clip: padding-box;
     font-weight: 500;
@@ -59,20 +58,20 @@
     margin-left: 15px;
 }
 
-.Convertor{
+.Convertor {
     display: flex;
 }
 
-.sumConvertor{
+.sumConvertor {
     display: flex;
 }
 
-.arrowSwitching{
+.arrowSwitching {
     align-self: end;
     margin-bottom: 20px;
 }
 
-.notebookBtn::after{
+.notebookBtn::after {
     content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjAwMDAyIDExLjhMMS40MDAwMiA1LjE0NjU1TDIuNTM3MzEgNC4wMDAwNUw4LjAwMDAxIDkuNTA3TDEzLjQ2MjcgNEwxNC42IDUuMTQ2NDlMOC4wMDAwMiAxMS44WiIgZmlsbD0iIzAwQkFGRiIvPgo8L3N2Zz4=");
     position: absolute;
     top: 27px;
@@ -80,11 +79,14 @@
     width: 15px;
 }
 
-.countrySelectionAction{
-    display: block!important;
+.countrySelectionAction {
+    display: block !important;
+}
+.actionBtnTwo{
+    display: block !important;
 }
 
-.countrySelection{
+.countrySelection {
     display: none;
     background: white;
     position: absolute;
@@ -106,14 +108,14 @@
     width: 10px;
 }*/
 
-.convertorBtn{
+.convertorBtn {
     width: 100%;
     max-width: 157px;
     background-color: #fff;
     background-image: none;
     border: 1px solid #d3d5d8;
     transition: border-color .15s ease-in-out;
-    padding: 16px 20px ;
+    padding: 16px 20px;
     border-radius: 10px;
     background-clip: padding-box;
     font-weight: 500;
@@ -121,4 +123,15 @@
     min-height: 64px;
     max-height: 64px;
     margin-left: 15px;
+}
+
+.arrowSwitching:hover {
+    cursor: pointer;
+}
+
+.notBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }

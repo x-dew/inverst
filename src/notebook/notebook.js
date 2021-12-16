@@ -9,17 +9,19 @@ import img from "../img/logoTwo.png";
 const Notebook = ({currencies, latest}) => {
 
     const [actionBtn, setActionBtn] = useState(0)
+    const [actionBtnTwo, setActionBtnTwo] = useState(0)
     const [actionIndex, setActionIndex] = useState(121)
+    const [actionIndexTwo, setActionIndexTwo] = useState(150)
     const [usd, setUsd] = useState(1)
     const indexCurrencies = Object.keys(currencies)
     const indexLatest = Object.keys(latest).map(value => {return latest[value]})
 
-
+    console.log(actionBtn)
 
     return (
         <div className='notebook'>
             <div className='sum'>
-                <h3>Сумма</h3>
+                <h3>У меня есть</h3>
                 <div className='sumConvertor'>
                     <input
                         className='notebookInput'
@@ -31,7 +33,8 @@ const Notebook = ({currencies, latest}) => {
                         }}
                         type="button"
                         className="notebookBtn">
-                        {actionIndex === 121 ? <div>
+                        {
+                            actionIndex === 121 ? <div>
                                 <div className='country'>
                                     <img
                                         src={`https://wise.com/public-resources/assets/flags/rectangle/rub.png`}
@@ -50,8 +53,8 @@ const Notebook = ({currencies, latest}) => {
                                         <h5>{indexCurrencies[actionIndex]}</h5>
                                     </div>
                                 </div>
-                            </div>}
-
+                            </div>
+                        }
                         <div
                             className={actionBtn === 1 ? "countrySelection countrySelectionAction" : 'countrySelection'}>
                             {
@@ -74,14 +77,15 @@ const Notebook = ({currencies, latest}) => {
                 </div>
             </div>
             <div className='arrowSwitching'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="#04bbff"
-                     className="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                     className="icon">
+                    <path
+                        d="M18.19 4.49l-.7.7L20.29 8H7.5v1h12.79l-2.8 2.81.7.7 4.02-4.01-4.02-4.01zM6.51 12.19l-.7-.7-4.02 4.01 4.02 4.01.7-.7L3.71 16H16.5v-1H3.71l2.8-2.81z"
+                        fill="#00b9ff"> </path>
                 </svg>
             </div>
             <div className='convertor'>
-                <h3>Конвертировано в</h3>
+                <h3>Хочу приобрести</h3>
                 <div className='Convertor'>
                     <input
                         onChange={(e)=> {
@@ -91,14 +95,51 @@ const Notebook = ({currencies, latest}) => {
                         className='notebookInput'
                         name="text"
                         placeholder={usd} />
-                    <button type="button" className="convertorBtn">
-                        <div className='country'>
-                            <img
-                                src={`https://wise.com/public-resources/assets/flags/rectangle/usd.png`}
-                                alt=""/>
-                            <div>
-                                <h5>{indexCurrencies[150]}</h5>
-                            </div>
+                    <button
+                        onClick={() => {
+                            actionBtnTwo === 0 ? setActionBtnTwo(1) : setActionBtnTwo(0)
+                        }}
+                        type="button"
+                        className="notebookBtn">
+                        {
+                            actionIndexTwo === 150 ? <div>
+                                    <div className='country'>
+                                        <img
+                                            src={`https://wise.com/public-resources/assets/flags/rectangle/usd.png`}
+                                            alt=""/>
+                                        <div>
+                                            <h5>{indexCurrencies[150]}</h5>
+                                        </div>
+                                    </div>
+                                </div> :
+                                <div>
+                                    <div className='country'>
+                                        <img
+                                            src={`https://wise.com/public-resources/assets/flags/rectangle/${indexCurrencies[actionBtnTwo].toLowerCase()}.png`}
+                                            alt=""/>
+                                        <div>
+                                            <h5>{indexCurrencies[actionIndexTwo]}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                        }
+                        <div
+                            className={actionBtnTwo === 1 ? "countrySelection actionBtnTwo" : 'countrySelection'}>
+                            {
+                                (Object.keys(latest)).map((data, index) => {
+                                    return <div onClick={() => setActionIndexTwo(index)}
+                                                className="countryСourses actionBtn">
+                                        <div className='country'>
+                                            <img
+                                                src={`https://wise.com/public-resources/assets/flags/rectangle/${data.toLowerCase()}.png`}
+                                                alt=""/>
+                                            <div>
+                                                <h5>{data}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                })
+                            }
                         </div>
                     </button>
                 </div>
