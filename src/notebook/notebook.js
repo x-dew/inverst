@@ -1,0 +1,110 @@
+import React, {useState} from "react";
+import './notebook.css'
+import Vector from '../img/vector.png'
+import img from "../img/logoTwo.png";
+
+
+/*${data.toLowerCase()}*/
+
+const Notebook = ({currencies, latest}) => {
+
+    const [actionBtn, setActionBtn] = useState(0)
+    const [actionIndex, setActionIndex] = useState(121)
+    const [usd, setUsd] = useState(1)
+    const indexCurrencies = Object.keys(currencies)
+    const indexLatest = Object.keys(latest).map(value => {return latest[value]})
+
+
+
+    return (
+        <div className='notebook'>
+            <div className='sum'>
+                <h3>Сумма</h3>
+                <div className='sumConvertor'>
+                    <input
+                        className='notebookInput'
+                           name="text"
+                           placeholder={indexLatest[actionIndex] * usd} />
+                    <button
+                        onClick={() => {
+                            actionBtn === 0 ? setActionBtn(1) : setActionBtn(0)
+                        }}
+                        type="button"
+                        className="notebookBtn">
+                        {actionIndex === 121 ? <div>
+                                <div className='country'>
+                                    <img
+                                        src={`https://wise.com/public-resources/assets/flags/rectangle/rub.png`}
+                                        alt=""/>
+                                    <div>
+                                        <h5>{indexCurrencies[121]}</h5>
+                                    </div>
+                                </div>
+                            </div> :
+                            <div>
+                                <div className='country'>
+                                    <img
+                                        src={`https://wise.com/public-resources/assets/flags/rectangle/${indexCurrencies[actionIndex].toLowerCase()}.png`}
+                                        alt=""/>
+                                    <div>
+                                        <h5>{indexCurrencies[actionIndex]}</h5>
+                                    </div>
+                                </div>
+                            </div>}
+
+                        <div
+                            className={actionBtn === 1 ? "countrySelection countrySelectionAction" : 'countrySelection'}>
+                            {
+                                (Object.keys(latest)).map((data, index) => {
+                                    return <div onClick={() => setActionIndex(index)}
+                                                className="countryСourses actionBtn">
+                                        <div className='country'>
+                                            <img
+                                                src={`https://wise.com/public-resources/assets/flags/rectangle/${data.toLowerCase()}.png`}
+                                                alt=""/>
+                                            <div>
+                                                <h5>{data}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                })
+                            }
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div className='arrowSwitching'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" fill="#04bbff"
+                     className="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg>
+            </div>
+            <div className='convertor'>
+                <h3>Конвертировано в</h3>
+                <div className='Convertor'>
+                    <input
+                        onChange={(e)=> {
+                            console.log(e.target.value)
+                            setUsd(e.target.value)
+                        }}
+                        className='notebookInput'
+                        name="text"
+                        placeholder={usd} />
+                    <button type="button" className="convertorBtn">
+                        <div className='country'>
+                            <img
+                                src={`https://wise.com/public-resources/assets/flags/rectangle/usd.png`}
+                                alt=""/>
+                            <div>
+                                <h5>{indexCurrencies[150]}</h5>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Notebook

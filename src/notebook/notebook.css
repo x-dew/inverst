@@ -1,0 +1,124 @@
+
+
+.notebook{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sum{
+    width: 100%;
+    max-width: 410px;
+}
+
+.convertor{
+    width: 100%;
+    max-width: 410px
+}
+
+.notebook h3{
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+    transition: color .15s ease-in-out;
+}
+
+.notebookInput{
+    width: 100%;
+    max-width: 207px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d3d5d8;
+    transition: border-color .15s ease-in-out;
+    padding: 0 16px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    font-weight: 500;
+    height: auto;
+    min-height: 62px;
+    max-height: 62px;
+}
+
+.notebookBtn{
+    position: relative;
+    width: 100%;
+    max-width: 157px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d3d5d8;
+    transition: border-color .15s ease-in-out;
+    padding: 16px 20px ;
+    border-radius: 10px;
+    background-clip: padding-box;
+    font-weight: 500;
+    height: auto;
+    min-height: 64px;
+    max-height: 64px;
+    margin-left: 15px;
+}
+
+.Convertor{
+    display: flex;
+}
+
+.sumConvertor{
+    display: flex;
+}
+
+.arrowSwitching{
+    align-self: end;
+    margin-bottom: 20px;
+}
+
+.notebookBtn::after{
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjAwMDAyIDExLjhMMS40MDAwMiA1LjE0NjU1TDIuNTM3MzEgNC4wMDAwNUw4LjAwMDAxIDkuNTA3TDEzLjQ2MjcgNEwxNC42IDUuMTQ2NDlMOC4wMDAwMiAxMS44WiIgZmlsbD0iIzAwQkFGRiIvPgo8L3N2Zz4=");
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    width: 15px;
+}
+
+.countrySelectionAction{
+    display: block!important;
+}
+
+.countrySelection{
+    display: none;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 137px;
+    box-shadow: 0px 2px 6px black;
+    padding: 10px;
+    z-index: 11;
+    overflow-x: hidden;
+    height: 100%;
+    max-height: 280px;
+    min-height: 280px;
+    border-radius: 10px;
+}
+
+/*.countrySelection::-webkit-scrollbar{
+    width: 10px;
+}*/
+
+.convertorBtn{
+    width: 100%;
+    max-width: 157px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d3d5d8;
+    transition: border-color .15s ease-in-out;
+    padding: 16px 20px ;
+    border-radius: 10px;
+    background-clip: padding-box;
+    font-weight: 500;
+    height: auto;
+    min-height: 64px;
+    max-height: 64px;
+    margin-left: 15px;
+}

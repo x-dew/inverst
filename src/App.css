@@ -4,7 +4,11 @@
     align-items: start;
     margin: 0 auto;
     width: 100%;
-    max-width: 1900px;
+    height: 100%;
+    max-height: 1329px;
+    min-height: 1329px;
+    background: repeating-linear-gradient(
+            20deg, #2359c0, #000 709px);
 }
 
 .scoreboard {
@@ -20,7 +24,7 @@
 .scoreboard-date {
     position: relative;
     width: 100%;
-    background: white;
+    background: black;
     max-width: 1350px;
     height: 1000px;
     border-radius: 500px 0px 0px 500px;
@@ -34,16 +38,27 @@
     width: 1000px;
 }
 
+
+
 .scoreboard-text{
     width: 100%;
-    max-width: 958px;
+    max-width: 928px;
     height: 602px;
-    background: white;
+    background-image: url("./img/conver.png"),url("./img/bg000-mb.webp"), linear-gradient(
+            200deg,#640ec3 20%,#1CFFEA 71%) ;
+    background-color: white;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:100%;
     z-index: 1;
     position: absolute;
     top: 167px;
     left: 150px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
 }
 
 @keyframes App-logo-spin {

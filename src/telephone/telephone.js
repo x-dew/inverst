@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './telephone.css'
 import img from '../img/logoTwo.png'
-import logo from '../img/logo.png'
+import logo from '../img/converLogo.png'
 import axios from "axios";
 import CNY from '../img/cny.png'
 import RUS from '../img/rus.png'
@@ -26,7 +26,7 @@ const Telephone = () => {
     }, [])
 
     return (
-        <div className='telephone'>
+        <div className='telephoneBlock'>
             <div className='logo'>
                 <img src={img} alt=""/>
                 <img className='logotype' src={logo} alt=""/>
