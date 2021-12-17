@@ -60,10 +60,19 @@
 
 .Convertor {
     display: flex;
+    transform: rotateX(0deg);
+    transition: .5s;
 }
 
 .sumConvertor {
     display: flex;
+    transform: rotateX(0deg);
+    transition: .5s;
+}
+
+.sumConvertorArrow{
+    transform: rotateX(360deg);
+    transition: .5s;
 }
 
 .arrowSwitching {
