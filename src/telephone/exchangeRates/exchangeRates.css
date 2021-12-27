@@ -1,0 +1,72 @@
+
+
+.exchangeRates h1 {
+    font-size: 25px;
+    margin-top: 65px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.courses{
+    overflow-x:hidden ;
+    height:100%;
+    max-height: 492px;
+}
+
+.courses::-webkit-scrollbar{
+    width: 0;
+}
+
+.countryСourses {
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+
+}
+
+.country img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.country h5 {
+    margin: 0;
+    font-size: 10px;
+}
+
+.country p {
+    margin-top: 3px;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.courseComparison {
+    width: 100%;
+    max-width: 118px;
+    background: #eeeeee;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.courseComparison{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.courseComparison p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.textMargin{
+    margin-left: 5px!important;
+}

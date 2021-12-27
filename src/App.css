@@ -98,3 +98,62 @@
         justify-content: end;
     }
 }
+
+@media screen and (max-width: 1243px) {
+    .scoreboard-date:after {
+        display: none;
+    }
+    .scoreboard-text{
+        background: none;
+        left: auto;
+    }
+    .scoreboard-date{
+        background: none;
+        justify-content: center;
+    }
+    .scoreboard{
+        background: none;
+    }
+}
+
+@media screen and (max-width: 730px){
+
+    .logo{
+        margin-bottom:40px;
+    }
+
+    .logotype {
+        max-width: 323px !important;
+    }
+    .scoreboard-text{
+       height: auto;
+        position: static;
+    }
+    .app-data {
+        flex-direction: column-reverse;
+    }
+    .scoreboard{
+        height: auto;
+    }
+
+    .scoreboard-date{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .logotype {
+        max-width: 250px !important;
+    }
+
+    .logo img{
+        width: 130px;
+    }
+
+}
+
+@media screen and (max-width: 415px){
+    .logotype {
+        max-width: 160px !important;
+    }
+}

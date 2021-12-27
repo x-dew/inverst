@@ -144,3 +144,19 @@
     justify-content: space-around;
     width: 100%;
 }
+
+@media screen and (max-width: 1243px){
+    .notebook {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .arrowSwitching svg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 367px){
+    .notebookBtn::after{
+        display: none;
+    }
+}
