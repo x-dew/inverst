@@ -27,10 +27,7 @@ const Telephone = () => {
 
     return (
         <div className='telephoneBlock'>
-            <div className='logo'>
-                <img src={img} alt=""/>
-                <img className='logotype' src={logo} alt=""/>
-            </div>
+
 
             <div className='telPartOne telFlex'>
                 <div className='telPartTwo telFlex'>

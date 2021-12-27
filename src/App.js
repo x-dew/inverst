@@ -4,6 +4,8 @@ import axios from "axios";
 import Telephone from "./telephone/telephone";
 import Img from './img/units-converter-time-converter.684976947c3d.png'
 import Notebook from "./notebook/notebook";
+import img from "./img/logoTwo.png";
+import logo from "./img/converLogo.png";
 
 
 function App() {
@@ -27,14 +29,20 @@ function App() {
 
     return (
         <div className="App">
-            <Telephone/>
-            <div className='scoreboard'>
-                <div className='scoreboard-date'>
-                    <div className='scoreboard-text'>
-                        <Notebook
-                            currencies={currencies}
-                            latest={latest}
-                        />
+            <div className='logo'>
+                <img src={img} alt=""/>
+                <img className='logotype' src={logo} alt=""/>
+            </div>
+            <div className='app-data'>
+                <Telephone/>
+                <div className='scoreboard'>
+                    <div className='scoreboard-date'>
+                        <div className='scoreboard-text'>
+                            <Notebook
+                                currencies={currencies}
+                                latest={latest}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,22 +8,14 @@
 
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    margin-top: 45px;
-}
-
-.logotype{
-    width: 100%!important;
-    max-width: 440px!important;
-}
 
 .header li {
     list-style: none;
     margin-right: 25px;
     font-size: 20px;
 }
+
+
 
 .telephoneBlock {
     width: 100%;
@@ -255,4 +247,10 @@ width: 0;
 
 .textMargin{
     margin-left: 5px!important;
+}
+
+@media screen and (max-width: 1606px) {
+    .telephoneBlock {
+        display: none;
+    }
 }
