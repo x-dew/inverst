@@ -22,15 +22,6 @@ const Notebook = ({currencies, latest}) => {
         return latest[value]
     })
 
-    console.log(indexLatest)
-    console.log(actionIndex)
-    console.log(actionIndex)
-    console.log(indexLatest[actionIndex])
-    console.log(indexLatest[actionIndexTwo])
-    console.log(number)
-    console.log(indexLatest[actionIndex] * number)
-
-
     return (
         <div className='notebook'>
             <div

@@ -25,8 +25,6 @@ function App() {
 
     }, [])
 
-    console.log('rub',latest.RUB)
-
     return (
         <div className="App">
             <div className='logo'>

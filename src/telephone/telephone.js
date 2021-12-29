@@ -12,8 +12,6 @@ import ExchangeRates from "./exchangeRates/exchangeRates";
 
 const Telephone = () => {
 
-
-
     return (
         <div className='telephoneBlock'>
             <div className='telPartOne telFlex'>
