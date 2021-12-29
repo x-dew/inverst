@@ -25,7 +25,7 @@ function App() {
 
     }, [])
 
-    console.log(latest.RUB)
+    console.log('rub',latest.RUB)
 
     return (
         <div className="App">

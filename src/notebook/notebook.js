@@ -22,11 +22,21 @@ const Notebook = ({currencies, latest}) => {
         return latest[value]
     })
 
-    console.log(arrow)
+    console.log(indexLatest)
+    console.log(actionIndex)
+    console.log(actionIndex)
+    console.log(indexLatest[actionIndex])
+    console.log(indexLatest[actionIndexTwo])
+    console.log(number)
+    console.log(indexLatest[actionIndex] * number)
+
 
     return (
         <div className='notebook'>
-            <div className='sum'>
+            <div
+                className='sum'
+                style={actionBtnTwo === 1 ? {zIndex:'-1'} : {zIndex: 1}}
+            >
                 <h3>У меня есть</h3>
                 <div className='sumConvertor'>
                     <input
@@ -93,10 +103,14 @@ const Notebook = ({currencies, latest}) => {
                           d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                 </svg>
             </div>
-            <div className='convertor'>
+            <div
+                className='convertor'
+                style={actionBtn === 1 ? {zIndex:'-1'} : {zIndex: 1}}
+            >
                 <h3>Хочу приобрести</h3>
                 <div className='Convertor'>
                     <input
+                        disabled={true}
                         className='notebookInput'
                         name="text"
                         placeholder={indexLatest[actionIndexTwo] / indexLatest[actionIndex] * number}/>
@@ -105,6 +119,7 @@ const Notebook = ({currencies, latest}) => {
                             actionBtnTwo === 0 ? setActionBtnTwo(1) : setActionBtnTwo(0)
                         }}
                         type="button"
+
                         className="notebookBtn">
                         {
                             actionIndexTwo === 150 ? <div>
