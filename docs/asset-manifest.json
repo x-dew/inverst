@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dcf4f6fe.chunk.css",
+    "main.js": "/static/js/main.c3a73b5b.chunk.js",
+    "main.js.map": "/static/js/main.c3a73b5b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4d61bddf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4d61bddf.js.map",
+    "static/js/2.65a05677.chunk.js": "/static/js/2.65a05677.chunk.js",
+    "static/js/2.65a05677.chunk.js.map": "/static/js/2.65a05677.chunk.js.map",
+    "static/js/3.b462cb62.chunk.js": "/static/js/3.b462cb62.chunk.js",
+    "static/js/3.b462cb62.chunk.js.map": "/static/js/3.b462cb62.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.dcf4f6fe.chunk.css.map": "/static/css/main.dcf4f6fe.chunk.css.map",
+    "static/js/2.65a05677.chunk.js.LICENSE.txt": "/static/js/2.65a05677.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/units-converter-time-converter.684976947c3d.abcffced.png",
+    "static/media/cny.5af4f7ec.png": "/static/media/cny.5af4f7ec.png",
+    "static/media/converLogo.e3346a29.png": "/static/media/converLogo.e3346a29.png",
+    "static/media/krz.aa2a8151.jpg": "/static/media/krz.aa2a8151.jpg",
+    "static/media/logoTwo.905da8a5.png": "/static/media/logoTwo.905da8a5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d61bddf.js",
+    "static/js/2.65a05677.chunk.js",
+    "static/css/main.dcf4f6fe.chunk.css",
+    "static/js/main.c3a73b5b.chunk.js"
+  ]
+}
